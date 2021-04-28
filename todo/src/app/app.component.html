@@ -19,11 +19,11 @@
             <td> {{ item.action }}</td>
             <td [ngSwitch]="item.done">
                 <span *ngSwitchCase="true">YAS!</span>
-                <span *ngSwitchCase="false">Nope :c</span>
+                <span *ngSwitchDefault>Nope :c</span>
             </td>
         </tr>
     </tbody>
-</table>  
+</table>
 <!-- allows component template disply items -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
