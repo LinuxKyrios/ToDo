@@ -10,5 +10,9 @@ export class AppComponent {
 
     getName() {
         return this.model.user;
-    }
+    } //function for obtainig user name
+
+    getTodoItems() {
+        return this.model.items;
+    } //function for obtaining item values from Model object
 }
