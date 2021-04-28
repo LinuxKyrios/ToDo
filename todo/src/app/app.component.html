@@ -10,6 +10,20 @@
 <h3 class="bg-primary p-a-1">{{getName()}} List</h3>
 
 <table class="table table-stripped table-bordered">
+    <thead>
+        <tr><th></th><th>Mission</th><th>Accomplished?</th></tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of getTodoItems(); let i = index">
+            <td>{{ i + 1 }}</td>
+            <td> {{ item.action }}</td>
+            <td [ngSwitch]="item.done">
+                <span *ngSwitchCase="true">YAS!</span>
+                <span *ngSwitchCase="false">Nope :c</span>
+            </td>
+        </tr>
+    </tbody>
+</table>  
 <!-- allows component template disply items -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
