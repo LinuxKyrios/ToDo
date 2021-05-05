@@ -1,5 +1,11 @@
 # ToDo
 
+## Project completed 05.05.2021
+All objectives are completed as app is fulfilling all basic objectives:
+- Has beginning list with missions to fulfill;
+- Allows to add new missions;
+- If mission is signed as completed, the view and data model is updated.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
 
 ## Development server
