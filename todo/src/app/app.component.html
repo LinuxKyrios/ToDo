@@ -8,7 +8,13 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <h3 class="bg-primary p-a-1">{{getName()}} List</h3>
-
+<div class="m-t-1 m-b-1">
+    <input class="form-control" #todoText />
+    <button class="btn btn-primart m-t-1" (click)="addItem(todoText.value)">
+        Add new
+    </button>
+</div>
+<!--Adding new missions to app -->
 <table class="table table-stripped table-bordered">
     <thead>
         <tr><th></th><th>Mission</th><th>Accomplished?</th></tr>
