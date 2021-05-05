@@ -13,6 +13,6 @@ export class AppComponent {
     } //function for obtainig user name
 
     getTodoItems() {
-        return this.model.items;
-    } //function for obtaining item values from Model object
+        return this.model.items.filter(item => !item.done);
+    } //function for obtaining item values from Model object and update it done with arrow function
 }
